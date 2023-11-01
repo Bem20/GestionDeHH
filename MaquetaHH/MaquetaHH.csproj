@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93A81489-2733-4AA0-957D-B55AE9ED7F57}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MaquetaHH</RootNamespace>
+    <AssemblyName>MaquetaHH</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Autorizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autorizaciones.Designer.cs">
+      <DependentUpon>Autorizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarSolicitud.Designer.cs">
+      <DependentUpon>BuscarSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creacion.Designer.cs">
+      <DependentUpon>Creacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesarrolladorInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesarrolladorInicio.Designer.cs">
+      <DependentUpon>DesarrolladorInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HHCargaManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HHCargaManual.Designer.cs">
+      <DependentUpon>HHCargaManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HHCargaMasiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HHCargaMasiva.Designer.cs">
+      <DependentUpon>HHCargaMasiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginHH.Designer.cs">
+      <DependentUpon>LoginHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Permisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Permisos.Designer.cs">
+      <DependentUpon>Permisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PmoInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PmoInicio.Designer.cs">
+      <DependentUpon>PmoInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolicitudesHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitudesHH.Designer.cs">
+      <DependentUpon>SolicitudesHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teletrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teletrabajo.Designer.cs">
+      <DependentUpon>Teletrabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacaciones.Designer.cs">
+      <DependentUpon>Vacaciones.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Autorizaciones.resx">
+      <DependentUpon>Autorizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarSolicitud.resx">
+      <DependentUpon>BuscarSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creacion.resx">
+      <DependentUpon>Creacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesarrolladorInicio.resx">
+      <DependentUpon>DesarrolladorInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HHCargaManual.resx">
+      <DependentUpon>HHCargaManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HHCargaMasiva.resx">
+      <DependentUpon>HHCargaMasiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHH.resx">
+      <DependentUpon>LoginHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permisos.resx">
+      <DependentUpon>Permisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PmoInicio.resx">
+      <DependentUpon>PmoInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SolicitudesHH.resx">
+      <DependentUpon>SolicitudesHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teletrabajo.resx">
+      <DependentUpon>Teletrabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacaciones.resx">
+      <DependentUpon>Vacaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
